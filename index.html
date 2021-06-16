@@ -747,7 +747,7 @@ initialize(FILES, error=True,)</code></pre>
 
 <p>You should use two spaces after a sentence-ending period in multi-sentence comments, except after the final sentence.</p>
 
-<p>When writing English, follow Strunk and White.</p>
+<p>Ensure that your comments are clear and easily understandable to other speakers of the language you are writing in.</p>
 
 <p>Python coders from non-English speaking countries: please write your comments in English, unless you are 120% sure that the code will never be read by people who don’t speak your language.</p>
 
@@ -791,7 +791,8 @@ initialize(FILES, error=True,)</code></pre>
 Optional plotz says to frobnicate the bizbaz first.
 &quot;&quot;&quot;</code></pre></li>
 
-<li>For one liner docstrings, please keep the closing <code>&quot;&quot;&quot;</code> on the same line.</li>
+<li>For one liner docstrings, please keep the closing <code>&quot;&quot;&quot;</code> on the same line::
+<pre><code class="language-python">&quot;&quot;&quot;Return an ex-parrot.&quot;&quot;&quot;</code></pre></li>
 
 </ul>
 
@@ -848,7 +849,7 @@ Optional plotz says to frobnicate the bizbaz first.
 <p></p>
 <li><p><code>single_trailing_underscore_</code>: used by convention to avoid conflicts with Python keyword, e.g.:</p>
 
-<pre><code class="language-python">Tkinter.Toplevel(master, class_=&#39;ClassName&#39;)</code></pre></li>
+<pre><code class="language-python">tkinter.Toplevel(master, class_=&#39;ClassName&#39;)</code></pre></li>
 
 <li><code>__double_leading_underscore</code>: when naming a class attribute, invokes name mangling (inside class FooBar, <code>__boo</code> becomes <code>_FooBar__boo</code>; see below).</li>
 <p></p>
